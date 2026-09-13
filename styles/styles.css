@@ -1,0 +1,76 @@
+/* nav styling */
+
+header {
+  display: flex;
+  box-shadow: 1px 1px 2px grey;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin: 2.1em 2em;
+}
+
+.logo {
+  margin: 0.4em;
+}
+
+/* body styling */
+
+body {
+  background-color: lightgrey;
+}
+
+main {
+  background-color: white;
+  width: 90%;
+  height: 1000px;
+  margin: 5.3em auto;
+  padding-top: 1em;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5em;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* main content styling */
+
+.welcome, .boilerplate {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.125rem;
+  padding-top: 1rem;
+}
+
+.welcome span {
+  font-weight: bold;
+}
+
+.welcome aside {
+  font-size: 0.95rem;
+  padding-top: 0.5rem;
+  padding-left: 0.3rem;
+  margin-top: 0.8rem;
+}
+
+.boilerplate {
+  margin-top: 5rem;
+}
+
+.html-boilerplate {
+  background-color: azure;
+  display: inline-block;
+  padding: 1.75rem;
+  margin-top: 3.5rem;
+  box-shadow: 3px 3px 4px grey;
+}
