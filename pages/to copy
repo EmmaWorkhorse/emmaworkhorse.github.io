@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>Emma cheat sheet</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+  </head>
+  <body>
+    <header>
+      <!--placeholder svg for logo-->
+      <div class="logo">
+        <a href="../index.html">
+          <svg width="60" height="60" class="logo">
+            <circle cx="30" cy="30" r="30" fill="yellow" />
+          </svg>
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Boilerplate</a></li>
+          <li><a href="#">Semantic HTML</a></li>
+          <li><a href="#">Positioning and Display</a></li>
+          <li><a href="#">Responsive Design</a></li>
+          <li><a href="#">Git and GitHub</a></li>
+          <li><a href="#">Accessibility</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Emmas Cheat Sheets</h1>
+
+    </main>
+  </body>
+</html>
