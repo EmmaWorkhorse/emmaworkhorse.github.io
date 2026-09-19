@@ -7,7 +7,7 @@
 
 .me {
     position: relative;
-    top: 4rem;
+    top: 1rem;
     left: 1rem;
 }
 
@@ -17,13 +17,13 @@
     color: rgb(196, 196, 196);
     font-style: italic;
     position: relative;
-    top: 4rem; 
+    top: 1rem; 
     left: 1rem;
 }
 
 .explanation {
     width: 80%;
-    margin: 3rem auto;
+    margin: 1rem auto 2rem;
 }
 
 .letter {
