@@ -1,0 +1,210 @@
+/* nav styling */
+
+header {
+  display: flex;
+  box-shadow: 0px 0.4px 2px rgb(208, 184, 184);
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  align-items: center;
+  padding: 0.85rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2rem;
+  width: 80rem;
+}
+
+nav a {
+  font-family: inter;
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1.25rem 1.2rem;
+  border-radius: 1rem;
+}
+
+nav a:hover {
+  background-color: rgb(175, 175, 175);
+  transition: background-color 0.2s;
+}
+
+.logo {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* body styling */
+
+body {
+  /*background-color: rgb(232, 203, 203);*/
+  background: #E8CBCB;
+  background: linear-gradient(90deg,rgb(227, 167, 167) 0%, rgb(241, 255, 147) 10%, rgb(241, 255, 147) 90%, rgb(206, 140, 86) 100%);
+}
+
+main {
+  background-color: rgb(255, 249, 228);
+  width: 92%;
+  min-height: 1000px;
+  margin: 5.3em auto 0;
+  padding-top: 1em;
+  padding-bottom: 3.65rem;
+}
+
+/* main content styling */
+
+h1 {
+  text-align: center;
+  font-size: 5em;
+  font-family: Montserrat;
+  font-weight: lighter; 
+  background-color: rgb(236, 181, 181);
+  background: linear-gradient(210deg, rgb(236, 181, 181) 5%, rgb(236, 181, 181) 70%, rgb(206, 140, 86) 100%);
+  border-radius: 1rem;
+  width: 70%;
+  margin: 2.5rem auto 7rem;
+  color: white;
+  box-shadow: 0px 0.2px 2px grey;
+  border-top: solid 2px white;
+  border-right: solid 3px white;
+}
+
+h2 {
+  font-family: roboto;
+  font-weight: 300;
+  margin: 2rem 0rem;
+  background-color: rgb(206, 140, 86);
+  background: linear-gradient(110deg, rgb(206, 140, 86) 0%, rgb(206, 140, 86) 92%, rgb(226, 200, 106) 100%);
+  width: fit-content;
+  padding: 0.4rem;
+  border-radius: 0.75rem;
+  color: white;
+  margin-top: 9rem;
+  border-bottom: solid 1.5px white;
+  border-left: solid 1.5px white;
+  box-shadow: 0px 0.2px 2px grey;
+}
+
+section {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.125rem;
+  padding-top: 1rem;
+}
+
+p {
+  font-family: inter;
+  font-size: 1.65rem;
+  font-weight: 250;
+  line-height: 2.65rem;
+  margin-top: 3.5rem;
+}
+
+article {
+  margin-top: 5rem;
+}
+
+code {
+  background-color: white;
+  display: inline-block;
+  padding: 1.75rem;
+  margin-top: 7.5rem;
+  box-shadow: 0px 0.2px 2px rgb(150, 134, 134);
+  border-left: solid 10px rgb(216, 175, 142);
+  border-radius: 5px;
+}
+
+table {
+  font-family: inter;
+  font-weight: 250;
+  margin-top: 6rem;
+  font-size: 1.45rem;
+  border-collapse: separate;
+  border-spacing: 0.35rem;
+}
+
+th {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: rgb(214, 182, 155);
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0.1px 0.4px 2px rgb(149, 140, 140);
+  border-right: solid 1.5px white;
+  border-top: solid 1px white;
+}
+
+td {
+  background-color: rgb(233, 224, 184);
+  padding: 0.95rem 2rem 0.75rem;
+  border-radius: 5px;
+  box-shadow: 0.1px 0.4px 2px rgb(175, 165, 165);
+}
+
+
+aside {
+  margin-top: 1.75rem;
+  font-family: roboto;
+  color: rgb(103, 99, 99);
+}
+
+/* footer styling */
+
+footer {
+  background-color: rgb(162, 140, 114);
+  height: fit-content;
+  width: 92%;
+  margin: 0 auto;
+  box-shadow: 1px -2px 2px rgb(175, 165, 165);
+}
+
+.footer-lists {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: roboto;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  padding-top: 1rem;
+}
+
+.footer-lists ul, .footer-contact {
+  padding-top: 1rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.copyright-info {
+  padding: 0.7rem;
+  font-size: 0.75rem;
+  margin: 0;
+  text-align: center;
+}
+
+footer p, footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.list-heading, .footer-contact{
+  text-decoration: underline;
+  font-size: 1.5rem;
+  text-decoration-color: white;
+  padding-bottom: 0.6rem;
+}
+
+footer a:hover {
+  color: rgb(219, 216, 216);
+}
+
+/* under construction page */
+
+.cat {
+  margin: 5rem 30rem;
+}

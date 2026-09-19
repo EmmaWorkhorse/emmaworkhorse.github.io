@@ -1,0 +1,12 @@
+.welcome span {
+  font-weight: bold;
+}
+
+.welcome aside {
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+  padding-left: 0.3rem;
+  margin-top: 2rem;
+  font-family: roboto;
+  font-weight: 250;
+}
