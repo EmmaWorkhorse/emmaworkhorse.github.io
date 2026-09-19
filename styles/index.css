@@ -1,12 +1,7 @@
-.welcome span {
-  font-weight: bold;
-}
-
-.welcome aside {
+/* move to main styles and remove this file */
+.flow .signoff {
   font-size: 1.5rem;
-  padding-top: 0.5rem;
-  padding-left: 0.3rem;
   margin-top: 2rem;
-  font-family: roboto;
-  font-weight: 250;
+  color: var(--muted-text-color);
+  font-style: italic;
 }

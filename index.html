@@ -9,74 +9,63 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="site-header">
       <!--placeholder svg for logo-->
       <a href="index.html">
-        <div class="logo">
-          <svg width="60" height="60" class="logo">
-            <circle cx="30" cy="30" r="30" fill="rgb(236, 181, 181)" />
-            <circle cx="30" cy="40" r="20" fill="rgb(226, 200, 106)" />
-          </svg>
-        </div>
+        <svg width="60" height="60" class="header-logo">
+          <circle cx="30" cy="30" r="30" fill="var(--pink)" />
+          <circle cx="30" cy="40" r="20" fill="rgb(226, 200, 106)" />
+        </svg>
       </a>
-      <nav>
+      <nav class="header-nav">
         <a href="index.html">Home</a>
-        <a href="pages/Contact.html">Contact</a>
-        <a href="#">Resources</a>
-        <a href="#">Projects</a>
-        <!--<a href="#">Boilerplate</a>
-        <a href="Semantic-html.HTML">Semantic HTML</a>
-        -->
+        <a href="pages/contact.html">Contact</a>
+        <a href="pages/under-construction.html">Resources</a>
+        <a href="pages/under-construction.html">Projects</a>
       </nav>
     </header>
     <main>
-      <section class="welcome">
+      <section class="flow">
         <h1>Emmas cheat sheets</h1>
 
-        <article>
-          <p>Welcome one, welcome well honestly, probably just one maybe two. This is my sick webpage im cooking up. 
+        <p><strong>Welcome one, welcome...</strong> well honestly, probably just one maybe two. This is my sick webpage im cooking up. 
           for now it will be a simple portfolio but i am planning on making it a little bit crazy and not well designed,
           and then eventually ill go on to use a lot of content from this site to make a real portofolio later down the line.
           but for now I'm really trying to make this as good as I can.</p>
-       </article>
-
-        <Article><p><span class="begining-intro">This webpage is a test project</span>
+          
+        <p>This webpage is a test project
           for <em>Git</em>, <em>GitHub</em>, <em>HTML</em> and <em>CSS</em>. It will both be a personal pet project as well as a
           genuine bank of useful information on topics I find tricky. Its a way to work through
           the information by using it practically as well documenting my learning to demonstrate
           understanding. But it will also be a place I can use for future refrence when I need
           help figuring something out or to just get boilerplate. Like my own
           <a href="https://developer.mozilla.org/en-US/" title="Stands for 'Mozilla Developer Network' and is a great place to go for info on CSS, HTML and JS.">MDN docs</a></p>
-        </article>
 
-        <article>
-          <p>I absolutely have big plans for this page to expand in the future but for now this is what it is...</p>
-        </article>
-        <aside>-Emma</aside>
+        <p>I absolutely have big plans for this page to expand in the future but for now this is what it is...</p>
+
+        <p class="signoff">-Emma</p>
       </section>
     </main>
     <footer>
-      <div class="footer-lists">
-        <a href="pages/Contact.html" class="footer-contact">Contact</a>
+      <nav>
+        <a href="pages/contact.html">Contact</a>
         <ul>
-            <li class="list-heading"><a href="#">Resources</a></li>
-            <li><a href="pages/Semantic-html.HTML">Semantic html</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="pages/semantic-html.html">Semantic html</a></li>
             <li><a href="pages/under-construction.html">Positioning and Display</a></li>
             <li><a href="pages/under-construction.html">Responsive Design</a></li>
             <li><a href="pages/under-construction.html">Git and GitHub</a></li>
             <li><a href="pages/under-construction.html">Accessibility</a></li>
         </ul>
         <ul>
-            <li class="list-heading"><a href="#">Projects</a></li>
-            <li><a href="#">Portfolio project</a></li>
+            <li><a href="pages/under-construction.html">Projects</a></li>
+            <li><a href="pages/under-construction.html">Portfolio project</a></li>
         </ul>
-      </div>
-      <p class="copyright-info">Copyright info here</p>
+      </nav>
+      <p>Copyright info here</p>
     </footer>
   </body>
 </html>
