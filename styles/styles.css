@@ -164,28 +164,52 @@ td {
 
 footer {
   background-color: var(--footer-color);
-  height: fit-content;
   width: 92%;
   margin: 0 auto;
   box-shadow: 1px -2px 2px var(--shadow-color);
+  text-decoration: none;
+  color: white;
+  padding-top: 2rem;
 }
 
-.footer-lists {
+.footer-nav {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-family: roboto;
-  line-height: 1.5rem;
+  font-family: var(--text-font);
   font-size: 1.2rem;
-  padding-top: 1rem;
 }
 
-.footer-lists ul, .footer-contact {
-  padding-top: 1rem;
+.footer-element {
+  flex: 1;
+  align-content: center;
+  display: grid;
+  justify-content: center;
+}
+
+.footer-element + .footer-element {
+  border-left: solid white 1px;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
 }
 
 footer a:hover {
   text-decoration: underline;
+  color: rgb(219, 216, 216);
+}
+
+/*couldnt get the color right for visited links*/
+
+/*footer a:visited {
+  color: var(--muted-text-color);
+  text-decoration-color: var(--muted-text-color);
+}*/
+
+.list-header, .footer-contact{
+  text-decoration: underline;
+  font-size: 1.5rem;
+  text-decoration-color: white;
 }
 
 .copyright-info {
@@ -195,20 +219,13 @@ footer a:hover {
   text-align: center;
 }
 
-footer p, footer a {
-  color: white;
-  text-decoration: none;
-}
+/* index.html styling */
 
-.list-heading, .footer-contact{
-  text-decoration: underline;
+.flow .signoff {
   font-size: 1.5rem;
-  text-decoration-color: white;
-  padding-bottom: 0.6rem;
-}
-
-footer a:hover {
-  color: rgb(219, 216, 216);
+  margin-top: 2rem;
+  color: var(--muted-text-color);
+  font-style: italic;
 }
 
 /* under construction page */
@@ -216,3 +233,4 @@ footer a:hover {
 .cat {
   margin: 5rem 30rem;
 }
+
