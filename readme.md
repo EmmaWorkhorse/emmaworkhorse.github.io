@@ -13,8 +13,7 @@ for the sake of it. I'll also use git and github for version control and
 github pages to publish it (its already up).
 
 ##todo
-h2 class and styles
-the shared container width, so main and footer match
-table and code blocks
 contact.css and semantic-html.css cleanup
+fix css for h2, table and code blocks
 the accessibility and viewport items
+fix the deleted files in git
