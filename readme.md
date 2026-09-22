@@ -13,6 +13,5 @@ for the sake of it. I'll also use git and github for version control and
 github pages to publish it (its already up).
 
 ##todo
-cleanup and under-construction.html
 the accessibility and viewport items
 Add a projects page and resources page
