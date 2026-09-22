@@ -1,25 +1,35 @@
+/* Color and Fonts */
+
+:root {
+  --pink: rgb(236, 181, 181);
+  --orange: rgb(206, 140, 86);
+  --gold: rgb(226, 200, 106);
+  --footer-color: rgb(162, 140, 114);
+  --main-background-color: rgb(255, 249, 228);
+  --code-border-color: rgb(216, 175, 142);
+  --shadow-color: rgb(150, 134, 134);
+  --muted-text-color: rgb(103, 99, 99);
+  --heading-font: "Montserrat", Arial, sans-serif;
+  --text-font: "Inter", "Roboto", sans-serif;
+}
+
 /* nav styling */
 
-header {
+.site-header {
   display: flex;
-  box-shadow: 0px 0.4px 2px rgb(208, 184, 184);
-  background-color: white;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-  top: 0;
+  box-shadow: 0px 0.4px 2px var(--shadow-color);
+  background-color: var(--main-background-color);
   align-items: center;
   padding: 0.85rem;
 }
 
-nav {
+.header-nav {
   display: flex;
-  justify-content: space-between;
-  margin: 0 2rem;
-  width: 80rem;
+  gap: 4rem;
+  padding-left: 2rem;
 }
 
-nav a {
+.header-nav a {
   font-family: inter;
   color: black;
   text-decoration: none;
@@ -28,100 +38,102 @@ nav a {
   border-radius: 1rem;
 }
 
-nav a:hover {
+.header-nav a:hover {
   background-color: rgb(175, 175, 175);
   transition: background-color 0.2s;
 }
 
-.logo {
-  margin-left: 1rem;
-  margin-right: 1rem;
+.header-logo {
+  display: block;
 }
 
 /* body styling */
 
 body {
-  /*background-color: rgb(232, 203, 203);*/
-  background: #E8CBCB;
-  background: linear-gradient(90deg,rgb(227, 167, 167) 0%, rgb(241, 255, 147) 10%, rgb(241, 255, 147) 90%, rgb(206, 140, 86) 100%);
+  background: linear-gradient(90deg, var(--pink) 0%, var(--gold) 10%, var(--gold) 90%, var(--orange) 100%);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--text-font);
+  font-size: 1.65rem;
+  font-weight: 250;
+  line-height: 2.65rem;
 }
 
 main {
-  background-color: rgb(255, 249, 228);
+  background-color: var(--main-background-color);
   width: 92%;
-  min-height: 1000px;
-  margin: 5.3em auto 0;
-  padding-top: 1em;
-  padding-bottom: 3.65rem;
+  margin: 1rem auto 0;
+  flex: 1;
+  padding: 4rem 2rem 8rem;
 }
 
 /* main content styling */
 
+.flow > * + * {
+  margin-top: 6rem;
+}
+
 h1 {
   text-align: center;
-  font-size: 5em;
-  font-family: Montserrat;
-  font-weight: lighter; 
-  background-color: rgb(236, 181, 181);
-  background: linear-gradient(210deg, rgb(236, 181, 181) 5%, rgb(236, 181, 181) 70%, rgb(206, 140, 86) 100%);
-  border-radius: 1rem;
-  width: 70%;
-  margin: 2.5rem auto 7rem;
+  font-size: 5rem;
+  font-family: var(--heading-font);
+  font-weight: lighter;
   color: white;
-  box-shadow: 0px 0.2px 2px grey;
+
+  width: 70%;
+  margin-inline: auto;
+
+  background-color: var(--pink);
+  background: linear-gradient(210deg, var(--pink) 5%, var(--pink) 70%, var(--orange) 100%);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 2px var(--shadow-color);
   border-top: solid 2px white;
   border-right: solid 3px white;
+  line-height: normal;
 }
 
 h2 {
-  font-family: roboto;
+  font-family: var(--heading-font);
   font-weight: 300;
-  margin: 2rem 0rem;
-  background-color: rgb(206, 140, 86);
-  background: linear-gradient(110deg, rgb(206, 140, 86) 0%, rgb(206, 140, 86) 92%, rgb(226, 200, 106) 100%);
-  width: fit-content;
+  background-color: var(--orange);
+  background: linear-gradient(110deg, var(--orange) 0%, var(--orange) 92%, var(--gold) 100%);
   padding: 0.4rem;
   border-radius: 0.75rem;
   color: white;
-  margin-top: 9rem;
   border-bottom: solid 1.5px white;
   border-left: solid 1.5px white;
-  box-shadow: 0px 0.2px 2px grey;
+  box-shadow: 0px 0.2px 2px var(--shadow-color);
 }
 
 section {
   width: 80%;
-  margin: 0 auto;
-  font-size: 1.125rem;
-  padding-top: 1rem;
+  margin-inline: auto;
 }
 
-p {
-  font-family: inter;
-  font-size: 1.65rem;
-  font-weight: 250;
-  line-height: 2.65rem;
-  margin-top: 3.5rem;
-}
+/*specific elements styling*/
 
-article {
-  margin-top: 5rem;
+aside {
+  font-family: roboto;
+  color: var(--muted-text-color);
+  font-size: 1.4rem
 }
 
 code {
   background-color: white;
   display: inline-block;
   padding: 1.75rem;
-  margin-top: 7.5rem;
-  box-shadow: 0px 0.2px 2px rgb(150, 134, 134);
-  border-left: solid 10px rgb(216, 175, 142);
+  box-shadow: 0px 0.2px 2px var(--shadow-color);
+  border-left: solid 10px var(--code-border-color);
   border-radius: 5px;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
 }
 
 table {
   font-family: inter;
   font-weight: 250;
-  margin-top: 6rem;
   font-size: 1.45rem;
   border-collapse: separate;
   border-spacing: 0.35rem;
@@ -130,10 +142,11 @@ table {
 th {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  /*maybe change background color to code border color*/
   background-color: rgb(214, 182, 155);
   color: white;
   border-radius: 5px;
-  box-shadow: 0.1px 0.4px 2px rgb(149, 140, 140);
+  box-shadow: 0.1px 0.4px 2px var(--shadow-color);
   border-right: solid 1.5px white;
   border-top: solid 1px white;
 }
@@ -142,42 +155,59 @@ td {
   background-color: rgb(233, 224, 184);
   padding: 0.95rem 2rem 0.75rem;
   border-radius: 5px;
-  box-shadow: 0.1px 0.4px 2px rgb(175, 165, 165);
-}
-
-
-aside {
-  margin-top: 1.75rem;
-  font-family: roboto;
-  color: rgb(103, 99, 99);
+  box-shadow: 0.1px 0.4px 2px var(--shadow-color);
 }
 
 /* footer styling */
 
 footer {
-  background-color: rgb(162, 140, 114);
-  height: fit-content;
+  background-color: var(--footer-color);
   width: 92%;
   margin: 0 auto;
-  box-shadow: 1px -2px 2px rgb(175, 165, 165);
+  box-shadow: 1px -0.5px 2px var(--shadow-color);
+  text-decoration: none;
+  color: white;
+  padding-top: 2rem;
 }
 
-.footer-lists {
+.footer-nav {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-family: roboto;
-  line-height: 1.5rem;
+  font-family: var(--text-font);
   font-size: 1.2rem;
-  padding-top: 1rem;
 }
 
-.footer-lists ul, .footer-contact {
-  padding-top: 1rem;
+.footer-element {
+  flex: 1;
+  align-content: center;
+  display: grid;
+  justify-content: center;
+}
+
+.footer-element + .footer-element {
+  border-left: solid white 1px;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
 }
 
 footer a:hover {
   text-decoration: underline;
+  color: rgb(219, 216, 216);
+}
+
+/*couldnt get the color right for visited links*/
+
+/*footer a:visited {
+  color: var(--muted-text-color);
+  text-decoration-color: var(--muted-text-color);
+}*/
+
+.list-header, .footer-contact{
+  text-decoration: underline;
+  font-size: 1.5rem;
+  text-decoration-color: white;
 }
 
 .copyright-info {
@@ -187,24 +217,30 @@ footer a:hover {
   text-align: center;
 }
 
-footer p, footer a {
-  color: white;
-  text-decoration: none;
-}
+/* index.html styling */
 
-.list-heading, .footer-contact{
-  text-decoration: underline;
+.flow .signoff {
   font-size: 1.5rem;
-  text-decoration-color: white;
-  padding-bottom: 0.6rem;
-}
-
-footer a:hover {
-  color: rgb(219, 216, 216);
+  margin-top: 2rem;
+  color: var(--muted-text-color);
+  font-style: italic;
 }
 
 /* under construction page */
 
 .cat {
-  margin: 5rem 30rem;
+  float: right;
+  margin-left: 1rem;
+  border: var(--code-border-color) 2px solid;
+  box-shadow: 1px 2px 4px var(--shadow-color);
+}
+
+.tape-construction {
+  position: absolute;
+  transform: rotate(8deg);
+  height: 100px;
+  width: auto;
+  right: 400px;
+  top: 355px;
+  z-index: 1;
 }

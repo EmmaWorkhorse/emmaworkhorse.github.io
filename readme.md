@@ -11,3 +11,7 @@ I will really mostly be relying on html and css as I dont really know how to
 use javascript for anything practical yet but i might do something with it
 for the sake of it. I'll also use git and github for version control and 
 github pages to publish it (its already up).
+
+##todo
+the accessibility and viewport items
+Add a projects page and resources page

@@ -1,0 +1,57 @@
+.letter {
+    border-left: solid rgb(208, 208, 117) 1px;
+    border-bottom: solid yellow 1px;
+    box-shadow: 1px 1px rgb(184, 183, 183);
+    color: rgb(103, 99, 99);
+    font-style: italic;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.letter-flow > * {
+    margin-top: 1.5rem;
+}
+
+.letter article {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.letter-text {
+    display: inline;
+}
+
+.cute-image {
+    position: relative;
+    border: var(--code-border-color) 2px solid;
+    background-color: white;
+    left: 0.5rem;
+    max-height: 280px;
+    max-width: 234px;
+    float: right;
+    box-shadow: 1px 2px 4px var(--shadow-color);
+}
+
+.cute-caption {
+    font-size: 1rem;
+    color: var(--muted-text-color);
+    font-style: italic;
+    position: relative;
+    bottom: 0.8rem;
+    left: 0.4rem;
+}
+
+.tape {
+    position: absolute;
+    transform: rotate(8deg);
+    height: 100px;
+    width: auto;
+    right: 430px;
+    top: 480px;
+    z-index: 1;
+}
+
+.letter-signoff {
+    font-size: 1.45rem;
+    font-weight: 250;
+}

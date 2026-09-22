@@ -10,3 +10,11 @@ blockquote {
 details {
     min-height: 180px;
 }
+
+.table-aside {
+    margin-top: 0.5rem;
+}
+
+.semantic-table {
+    margin-top: 0;
+}
