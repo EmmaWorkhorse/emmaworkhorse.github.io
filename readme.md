@@ -13,7 +13,6 @@ for the sake of it. I'll also use git and github for version control and
 github pages to publish it (its already up).
 
 ##todo
-contact.css and semantic-html.css cleanup
-fix css for h2, table and code blocks
+cleanup and under-construction.html
 the accessibility and viewport items
-fix the deleted files in git
+Add a projects page and resources page
