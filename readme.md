@@ -1,16 +1,17 @@
-# Personal website!
+# My personal website!
 
-## Goals!
+## What is this?
 
-For this website I want to transform an already made website into a portfolio
-where I will put my projects. I mostly imagine preparing it for future
-projects given I dont have any finished projects atm.
+As a newbie to everything in network tech I am working through courses (primarily on Codecademy) and docs.
+This website is a project that Codecademy encourages you to do but as I like the idea I want this to be
+an extension of my knowledge and learning in the topics of web development and network technology.
+So I'll be actually using it as a portfolio as well as personal doc website hosted on GitHub pages.
 
 ## Tech stack
-I will really mostly be relying on html and css as I dont really know how to
-use javascript for anything practical yet but i might do something with it
-for the sake of it. I'll also use git and github for version control and 
-github pages to publish it (its already up).
+I will really mostly be relying on HTML and CSS as I don't really know how to
+use JS for anything practical yet but i might do something with it
+to challenge myself. I'll also use Git and GitHub for version control and 
+GitHub pages to publish it (its already up).
 
 ## todo
 the accessibility and viewport items
